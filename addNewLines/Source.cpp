@@ -2,7 +2,7 @@
 // directory of the file is set to 	"D:\\bcs\\old\\";
 // user can continuously work with another text file after one another.
 // to finish, type "zz"
-
+// haha
 // update: added folder directory function so user can pick a text file(or multiple text files)
 // from any folder and rename them as pleased
 
@@ -48,11 +48,11 @@ void run(string in, string out) {
 					if ((curr & 0x80) != 0x80) {	// if ascii
 						tmp += curr;				// first add it to newfile
 
-						if (curr == '.') {				// if we see period
-							if (prevInd + 1 != i) {		// and it's not followed by another period
-														//string ttt = to_string(tmp_index);  tmp += "(" + ttt + ")";
+						// if we see period and it's not followed by another period
+						if (curr == '.') {				
+							if (prevInd + 1 != i) {
 
-														// dont want period in front of current period
+								// dont want period in front of current period
 								if (i + 1 < line.length() && line.at(i + 1) != '.') {
 									if (tmp_index == REPETITION) {	// if this is 5th period, add newlines
 										tmp += "\n\n";
@@ -128,10 +128,8 @@ vector<string> extract_fileNames(char* in) {
 
 			if (curr == '\0') {
 				if (prev == '\0') {
-					//std::cout << "(nulled)" << endl;
 					break;
 				}
-				//std::cout << "(nulled)" << endl;
 				out.push_back(tmp);
 				tmp = "";
 			}
