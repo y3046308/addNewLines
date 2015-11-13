@@ -2,7 +2,7 @@
 // directory of the file is set to 	"D:\\bcs\\old\\";
 // user can continuously work with another text file after one another.
 // to finish, type "zz"
-
+// haha
 // update: added folder directory function so user can pick a text file(or multiple text files)
 // from any folder and rename them as pleased
 
